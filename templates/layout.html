@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="icon" type="image/png" href="http://www.mb-serrurier-lyon.fr/images/fav.png">
+    <title>{% block titre %}{% endblock %}</title>
+</head>
+   {% block nav %}
+
+   {% endblock %}
+</head>
+<body>    
+    {% block body %}
+
+    {% endblock %}
+<script type="text/javascript" src="{{ url_for('static', filename='js/popper.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+.body-container
+{
+    padding-top: 70px;
+}
+
+.website-card
+{
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.websites-container
+{
+    margin-top: 70px;
+}
+
+.website-card-icon
+{
+    font-size: 50px;
+}
+
+.website-card-code
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.website-card-title a
+{
+    color: #fff !important;
+}
+
+.btn-white
+{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-white:hover
+{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.show-site-title
+{
+    margin-bottom: 25px;
+}
+
+.show-site-historic
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.admin-title-button
+{
+    line-height: 65px;
+    vertical-align: bottom;
+}
+
+#flash-messages-container
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    text-align: right;
+}
+
+.flash-message-alert
+{
+    width: 350px;
+    margin-right: 45px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.alert.flash-message-alert {
+    display: inline-block;
+    margin-left: 95px;
+    position: relative;
+    font-size: 16px;
+}
+
+.admin-subtitle {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.test2 {
+padding-top:90px;
+}
+
+.panel-heading {
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+}
+
+.panel-login {
+padding:10px;
+-webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+}
+
+.list-group-item{
+    border: 0;
+    padding-left: 0;
+    border-top: 1px solid;
+    border-color: rgba(37,40,43,0.1);
+}
+.list-group .list-group-item:first-child{
+    border:0;
+}
+.list-group .list-group-item a{
+    color: #2895F1;
+    cursor: pointer;
+    text-decoration: none;
+}
+.list-group.list-group-header{
+    padding:0;
+    margin:0;
+}
+.list-group.list-group-body .glyphicon {
+ font-size: 25px; vertical-align: middle;
+}
+.list-group-panel{
+    border: 1px solid #ccdbeb;
+    border-radius: 0;
+}
+
+.main-box.no-header {
+    padding-top: 20px;
+}
+.main-box {
+    background: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -moz-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -o-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    -ms-box-shadow: 1px 1px 2px 0 #CCCCCC;
+    box-shadow: 1px 1px 2px 0 #CCCCCC;
+    margin-bottom: 16px;
+    -webikt-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.table a.table-link.danger {
+    color: #e74c3c;
+}
+.label {
+    border-radius: 3px;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+.user-list tbody td .user-subhead {
+    font-size: 0.875em;
+    font-style: italic;
+}
+.user-list tbody td .user-link {
+    display: block;
+    font-size: 1.25em;
+    padding-top: 3px;
+    margin-left: 60px;
+}
+a {
+    color: #3498db;
+    outline: none!important;
+}
+.user-list tbody td>img {
+    position: relative;
+    max-width: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.table thead tr th {
+    text-transform: uppercase;
+    font-size: 0.875em;
+}
+.table thead tr th {
+    border-bottom: 2px solid #e7ebee;
+}
+.table tbody tr td:first-child {
+    font-size: 1.125em;
+    font-weight: 300;
+}
+.table tbody tr td {
+    font-size: 0.875em;
+    vertical-align: middle;
+    border-top: 1px solid #e7ebee;
+    padding: 12px 8px;
+}

@@ -1,0 +1,98 @@
+{% extends 'layout.html' %} 
+
+{% block titre %}
+    Administration 
+{% endblock %} 
+
+{% block nav %}
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/admin/">Serrure Pannel Gestion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0"></ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/">Administration</a>
+                </li>
+		<li class="nav-item">
+ 		    <a class="nav-link" href="/admin/add">Utilisateur +</a>
+		<li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('admin_logout') }}">Déconnexion <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="container test2">
+	<div class="row">
+		<div class="col-md-12">
+		    <div class="card">
+		        <div class="card-body">
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <h4>Edit utilisateur</h4>
+		                    <hr>
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <form action="" method="POST">
+                              <div class="form-group row">
+                                <label for="email" class="col-4 col-form-label">Email</label> 
+                                <div class="col-8">
+                                  <input name="email" id="email" placeholder="Email" required="required" value="{{ users[1] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="name" class="col-4 col-form-label">Prénom</label> 
+                                <div class="col-8">
+                                  <input name="name" id="name" placeholder="Prénom" required="required" value="{{ users[2] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="lastname" class="col-4 col-form-label">Nom</label> 
+                                <div class="col-8">
+                                  <input name="lastname" id="lastname" placeholder="Nom" required="required" value="{{ users[3] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="rfid" class="col-4 col-form-label">Tag RFID</label> 
+                                <div class="col-8">
+                                  <input name="rfid" id="rfid" placeholder="RFID" required="required" value="{{ users[4] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="rfid" class="col-4 col-form-label">Date de création</label>
+                                <div class="col-8">
+                                  <input name="date" id="date" placeholder="2018-06-03" required="required" value="{{ users[6] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="rfid" class="col-4 col-form-label">Administration</label>
+                                <div class="col-8">
+                                  <input name="admin" id="admin" placeholder="0=Non 1=Oui" required="required" value="{{ users[7] }}" class="form-control here" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <div class="offset-4 col-8">
+                                  <button name="submit" type="submit" value="Editez" class="btn btn-primary">Sauvegarder</button> 
+                              </div>
+                            </form>
+                            <button class="btn btn-danger href="{{ url_for('admin') }}"">Annuler</button>
+		        </div>
+		     </div>  
+                  </div>
+               </div> 
+            </div>
+	 </div>
+      </div>
+
+{% endblock %}

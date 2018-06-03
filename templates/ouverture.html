@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Porte
+{% endblock %}
+
+{% block nav %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/admin/">Serrure Pannel Gestion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0"></ul>
+            <ul class="navbar-nav my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/porte/">Ouverture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/">Administration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/add">Utilisateur + </a>
+                <li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('admin_logout') }}">Déconnexion <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block body %}
+    <div class="container test2">
+        <p class="text-center"><img src="https://png.pngtree.com/element_origin_min_pic/16/09/01/1657c7e9b18cbf2.jpg" alt="Porte ouverte"></p>
+        <p class="text-center"> La porte est ouverte </p>
+    </div>
+{% endblock %}
